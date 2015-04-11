@@ -14,7 +14,6 @@
 		745D09161AC4778400486BBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 745D09141AC4778400486BBE /* LaunchScreen.xib */; };
 		745D09221AC4778400486BBE /* BlocBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745D09211AC4778400486BBE /* BlocBrowserTests.m */; };
 		745D092D1AC47A6000486BBE /* BLCWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745D092C1AC47A6000486BBE /* BLCWebBrowserViewController.m */; };
-		745D092F1AC5C79B00486BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745D092E1AC5C79B00486BBE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,6 @@
 		745D09211AC4778400486BBE /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
 		745D092B1AC47A6000486BBE /* BLCWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWebBrowserViewController.h; sourceTree = "<group>"; };
 		745D092C1AC47A6000486BBE /* BLCWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWebBrowserViewController.m; sourceTree = "<group>"; };
-		745D092E1AC5C79B00486BBE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 				745D09141AC4778400486BBE /* LaunchScreen.xib */,
 				745D092B1AC47A6000486BBE /* BLCWebBrowserViewController.h */,
 				745D092C1AC47A6000486BBE /* BLCWebBrowserViewController.m */,
-				745D092E1AC5C79B00486BBE /* Main.storyboard */,
 				745D090C1AC4778400486BBE /* ViewController.h */,
 				745D090D1AC4778400486BBE /* ViewController.m */,
 				745D09051AC4778400486BBE /* Supporting Files */,
@@ -206,7 +203,6 @@
 			files = (
 				745D09161AC4778400486BBE /* LaunchScreen.xib in Resources */,
 				745D09131AC4778400486BBE /* Images.xcassets in Resources */,
-				745D092F1AC5C79B00486BBE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +408,7 @@
 				745D09271AC4778400486BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		745D09281AC4778400486BBE /* Build configuration list for PBXNativeTarget "BlocBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +417,7 @@
 				745D092A1AC4778400486BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
