@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C84E8CFD-3020-4E27-8391-4AB3C701D611</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BlocBrowser</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F29DFD0CEAD3CB80CD494B75F91F3AECFC0A7701</key>
+		<string>https://github.com/adalove/browser.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BlocBrowser.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F29DFD0CEAD3CB80CD494B75F91F3AECFC0A7701</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/adalove/browser.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F29DFD0CEAD3CB80CD494B75F91F3AECFC0A7701</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F29DFD0CEAD3CB80CD494B75F91F3AECFC0A7701</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BlocBrowser</string>
+		</dict>
+	</array>
+</dict>
+</plist>
