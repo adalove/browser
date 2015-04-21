@@ -14,6 +14,7 @@
 		745D09161AC4778400486BBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 745D09141AC4778400486BBE /* LaunchScreen.xib */; };
 		745D09221AC4778400486BBE /* BlocBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745D09211AC4778400486BBE /* BlocBrowserTests.m */; };
 		745D092D1AC47A6000486BBE /* BLCWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745D092C1AC47A6000486BBE /* BLCWebBrowserViewController.m */; };
+		74FD3B531ADD6FDF0056AFDD /* BLCAwesomeFloatingToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FD3B521ADD6FDF0056AFDD /* BLCAwesomeFloatingToolbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		745D09211AC4778400486BBE /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
 		745D092B1AC47A6000486BBE /* BLCWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWebBrowserViewController.h; sourceTree = "<group>"; };
 		745D092C1AC47A6000486BBE /* BLCWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWebBrowserViewController.m; sourceTree = "<group>"; };
+		74FD3B511ADD6FDF0056AFDD /* BLCAwesomeFloatingToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCAwesomeFloatingToolbar.h; sourceTree = "<group>"; };
+		74FD3B521ADD6FDF0056AFDD /* BLCAwesomeFloatingToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCAwesomeFloatingToolbar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 		745D08F91AC4778400486BBE = {
 			isa = PBXGroup;
 			children = (
+				74FD3B511ADD6FDF0056AFDD /* BLCAwesomeFloatingToolbar.h */,
+				74FD3B521ADD6FDF0056AFDD /* BLCAwesomeFloatingToolbar.m */,
 				745D09041AC4778400486BBE /* BlocBrowser */,
 				745D091E1AC4778400486BBE /* BlocBrowserTests */,
 				745D09031AC4778400486BBE /* Products */,
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74FD3B531ADD6FDF0056AFDD /* BLCAwesomeFloatingToolbar.m in Sources */,
 				745D090E1AC4778400486BBE /* ViewController.m in Sources */,
 				745D090B1AC4778400486BBE /* AppDelegate.m in Sources */,
 				745D092D1AC47A6000486BBE /* BLCWebBrowserViewController.m in Sources */,
