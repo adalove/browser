@@ -127,14 +127,17 @@
         self.currentLabel.alpha = 0.5;
     }
 }
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     UILabel *label = [self labelFromTouches:touches withEvent:event];
-    if (self.currentLabel == label) {
+    
+    if (self.currentLabel == label && [label isKindOfClass:[UILabel class]]) {
         NSLog(@"Label tapped: %@", self.currentLabel.text);
-        if ([self.delegate respondsToSelector:@selector(floatingToolbar:didSelectButtonWithTitle:)]){
+        
+        if ([self.delegate respondsToSelector:@selector(floatingToolbar:didSelectButtonWithTitle:)]) {
             [self.delegate floatingToolbar:self didSelectButtonWithTitle:self.currentLabel.text];
         }
     }
+    
     self.currentLabel.alpha = 1;
     self.currentLabel = nil;
 }
