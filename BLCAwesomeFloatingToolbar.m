@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSArray *labels;
 @property (nonatomic, weak) UILabel *currentLabel;
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
+@property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
+
 @end
 
 @implementation BLCAwesomeFloatingToolbar
@@ -62,6 +64,11 @@
         
         self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
         [self addGestureRecognizer:self.tapGesture];
+        
+        self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panFired:)];
+        [self addGestureRecognizer:self.panGesture];
+        
+        
     }
     
     return self;
@@ -128,6 +135,19 @@
             }
         }
     }
+}
+
+- (void) panFired:(UIPanGestureRecognizer *)recognizer {
+    if(recognizer.state == UIGestureRecognizerStateRecognized) {
+        CGPoint translation = [recognizer translationInView:self];
+        NSLog(@"New Translation: %@", NSStringFromCGPoint(translation));
+        
+        if ([self.delegate respondsToSelector:@selector(floatingToolbar:didTryToPanWithOffset:)]) {
+            [self.delegate floatingToolbar:self didTryToPanWithOffset:translation];
+        }
+        [recognizer setTranslation:CGPointZero inView:self];
+    }
+
 }
 
 
