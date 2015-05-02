@@ -206,6 +206,13 @@
         toolbar.frame = potentialNewFrame;
     }
 }
+                
+-(void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPinchWithScale:(CGFloat)scale{
+    NSLog(@"Scale is  %f",scale);
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    CGAffineTransform newTransform = CGAffineTransformScale(transform, scale, scale);
+    toolbar.transform = newTransform;
+}
 
     
 @end
