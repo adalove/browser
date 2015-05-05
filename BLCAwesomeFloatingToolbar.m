@@ -116,9 +116,9 @@
         
         thisLabel.frame = CGRectMake(labelX, labelY, labelWidth, labelHeight);
     }
-        
     }
-                  );
+        );
+                  
 }
 
 
@@ -166,7 +166,7 @@
             [self.delegate floatingToolbar:self didTryToPinchWithScale:scale];
         }
         
-        [recognizer setScale:1];
+        [recognizer setScale:recognizer.scale];
     }
 }
 
