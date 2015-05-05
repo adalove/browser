@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "452101548.200624"
+            timestampString = "452445914.03991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "-setEnabled:forButtonWithTitle:"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "-pinchFired:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

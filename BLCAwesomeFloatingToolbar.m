@@ -83,7 +83,10 @@
 }
 */
 
-- (void) layoutSubviews {
+- (void) layoutSubviews
+{
+    static dispatch_once_t onceToken;
+    dispatch_once( &onceToken, ^{
     // set the frames for the 4 labels
     
     for (UILabel *thisLabel in self.labels) {
@@ -113,6 +116,9 @@
         
         thisLabel.frame = CGRectMake(labelX, labelY, labelWidth, labelHeight);
     }
+        
+    }
+                  );
 }
 
 
