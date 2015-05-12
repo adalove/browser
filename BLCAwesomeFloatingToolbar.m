@@ -18,6 +18,7 @@
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 @property (nonatomic, strong) UIPinchGestureRecognizer *pinchGesture;
+@property (nonatomic, strong) UILongPressGestureRecognizer *pressGesture;
 @end
 
 @implementation BLCAwesomeFloatingToolbar
@@ -70,6 +71,9 @@
         
         self.pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchFired:)];
         [self addGestureRecognizer:self.pinchGesture];
+        
+        self.pressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(pressFired:)];
+        [self addGestureRecognizer:self.pressGesture];
     }
     
     return self;
@@ -169,6 +173,26 @@
         [recognizer setScale:recognizer.scale];
     }
 }
+
+- (void) pressFired:(UILongPressGestureRecognizer *)recognizer{
+    if(recognizer.state == UIGestureRecognizerStateChanged) {
+        
+        NSLog(@"long press activated");
+
+        if ([self.delegate respondsToSelector:@selector(floatingToolbarDidTryToLongPress:)]) {
+            [self floatingToolbarDidTryToLongPress:self];
+        }
+        
+    }
+}
+
+- (void) floatingToolbarDidTryToLongPress:self {
+    NSLog(@"this method is being called. keep going!");
+//    NSLog(@"array = %@",shiftArray(self.colors));
+//    self.colors = @[[self.colors[0+1]], [self.colors[1+1]], [self.colors[2+1]], [self.colors[3-3]]];
+}
+
+
 
 
 

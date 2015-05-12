@@ -213,6 +213,13 @@
     CGAffineTransform newTransform = CGAffineTransformScale(transform, scale, scale);
     toolbar.transform = newTransform;
 }
+                
+-(void) floatingToolbarDidTryToLongPress:(BLCAwesomeFloatingToolbar *)toolbar{
+    NSLog(@"I'm long pressing!");
+    
+    
+}
+                
 
     
 @end
