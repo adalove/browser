@@ -214,11 +214,7 @@
     toolbar.transform = newTransform;
 }
                 
--(void) floatingToolbarDidTryToLongPress:(BLCAwesomeFloatingToolbar *)toolbar{
-    NSLog(@"I'm long pressing!");
-    
-    
-}
+
                 
 
     

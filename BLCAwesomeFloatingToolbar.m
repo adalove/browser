@@ -179,17 +179,22 @@
         
         NSLog(@"long press activated");
 
-        if ([self.delegate respondsToSelector:@selector(floatingToolbarDidTryToLongPress:)]) {
-            [self floatingToolbarDidTryToLongPress:self];
-        }
+        [self floatingToolbarDidTryToLongPress:self];
+    
         
     }
 }
 
-- (void) floatingToolbarDidTryToLongPress:self {
+- (void) floatingToolbarDidTryToLongPress:(BLCAwesomeFloatingToolbar*)toolbar {
     NSLog(@"this method is being called. keep going!");
-//    NSLog(@"array = %@",shiftArray(self.colors));
-//    self.colors = @[[self.colors[0+1]], [self.colors[1+1]], [self.colors[2+1]], [self.colors[3-3]]];
+    
+    self.colors = @[self.colors[1], self.colors[2], self.colors[3], self.colors[0]];
+    
+    int index = 0;
+    for (UILabel *thisLabel in self.labels) {
+        thisLabel.backgroundColor = self.colors[index];
+        index++;
+    }
 }
 
 
